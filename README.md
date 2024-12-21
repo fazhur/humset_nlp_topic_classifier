@@ -1,6 +1,6 @@
 # Humanitarian Text Classification with BERTA
 
-This project explores the application of Natural Language Processing (NLP) for multi-class, multi-label text classification in humanitarian response documents. Using a fine-tuned BERTA transformer, the project aims to automate the categorization of hierarchical annotations in humanitarian datasets.
+This project explores the application of Natural Language Processing (NLP) for multi-class, multi-label text classification in humanitarian response documents. Using a fine-tuned BERTA transformer, SVM and zero-shot approach using OpenAI language models, the project aims to automate the categorization of hierarchical annotations in humanitarian datasets.
 
 ## Project Overview
 
