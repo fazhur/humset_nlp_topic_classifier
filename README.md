@@ -42,14 +42,14 @@ The dataset is a filtered subset of the **HumSet** corpus, focusing exclusively 
 ## SVM Classifier
 
 ### Overview
-In addition to the BERTA transformer, a Support Vector Machine (SVM) was implemented as a baseline model for multi-label classification. SVM was trained using bag-of-words features extracted from the dataset.
+In addition to the BERTA transformer, a Support Vector Machine (SVM) was implemented as a baseline model for multi-label classification. SVM was trained using combined vectorisations of texts and topics from dataset.
 
 ### Key Features
 - Used a RBF kernel optimized for multi-label text classification.
 - Provided a performance benchmark to compare against BERTA.
 
 ### Results
-- SVM achieved reasonable precision and recall but was less effective than BERTA for handling hierarchical and long-text inputs.
+- SVM achieved reasonable precision and recall that could be compared with transformer based approach.
 
 ## Application
 
@@ -59,13 +59,7 @@ A web-based application was developed to make the classification process accessi
 ### Features
 - **Upload Documents**: Users can upload text documents or paste excerpts directly.
 - **Real-Time Predictions**: Provides multi-label predictions using optionally the fine-tuned BERTA model, SVM or GPT.
-- **Visualization**: Displays the predicted labels and binary matrix of mentioned classes.
-
-### Prerequisites
-- Python 3.7+
-- Transformers library (`pip install transformers`)
-- Scikit-learn (`pip install scikit-learn`)
-- PyTorch (`pip install torch`)
+- **Visualization**: Load the predicted labels and binary matrix of mentioned classes.
 
 ## Key Takeaways
 - Demonstrates the use of transformers for real-world NLP tasks.
